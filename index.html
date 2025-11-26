@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Dashboard</title>
 </head>
@@ -43,7 +44,7 @@
 <main>
     <section class="container">
         <section class="row pt-3">
-            <section class="col-12 col-8-lg">
+            <section class="col-12 col-lg-8 pb-3">
                 <section class="d-flex justify-content-between">
                     <h2>Catalogo Libri</h2>
                     <a class="btn btn-primary" href="">Aggiungi Libro</a>
@@ -52,40 +53,242 @@
                     <thead>
                         <tr>
                             <th>Titolo</th>
-                            <th>Data Prestito</th>
-                            <th>Stato</th>
+                            <th class="d-none d-sm-table-cell">Data Prestito</th>
+                            <th>Stato</th>                           
                             <th>Azioni</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>I pilastri della Terra</td>
-                             <td></td>
+                            <td class="d-none d-sm-table-cell">-</td>
                             <td><span class="badge rounded-pill bg-success">Disponibile</span></td>
-                          
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
                         </tr>
-
-                        
-                        
-                        <!--
-                            <td>I promessi sposi</td>                    
-                            <td>Il signore degli anelli</td>                         
-                            <td>Harry Potter e la pietra filosofale</td>                        
-                            <td>Il codice Da Vinci</td>                         
-                            <td>Shining</td>                         
+                        <tr>
+                            <td>I promessi sposi</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge rounded-pill bg-success">Disponibile</span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>Il signore degli anelli</td>
+                            <td class="d-none d-sm-table-cell">18/10/2023</td>
+                            <td><span class="badge rounded-pill bg-warning">In prestito</span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>Harry Potter e la pietra filosofale</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge rounded-pill bg-success">Disponibile<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>Il codice Da Vinci</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge rounded-pill bg-danger">Non disponibile<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>Shining</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge rounded-pill bg-success">Disponibile<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>La divina commedia</td>
+                            <td class="d-none d-sm-table-cell">21/09/2023</td>
+                            <td><span class="badge rounded-pill bg-warning">In prestito<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>Il trono di spade</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge rounded-pill bg-success">Disponibile<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>Il mondo di Sofia</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge rounded-pill bg-danger">Non disponibile<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>Le cronache di Narnia: il leone, la strega e larmadio</td>
+                            <td class="d-none d-sm-table-cell">25/07/2023</td>
+                            <td><span class="badge rounded-pill bg-warning">In prestito<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>il piccolo principe</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge rounded-pill bg-success">Disponibile<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <tr>
+                            <td>La storia infinita</td>
+                            <td class="d-none d-sm-table-cell">-</td>
+                            <td><span class="badge rounded-pill bg-success">Disponibile<span></td>
+                            <td>
+                                <div class="d-flex">
+                                    <a href="" class="btn p-1"><i class="bi bi-pencil-fill"></i></a>
+                                    <a href="" class="btn p-1"><i class="bi bi-trash-fill"></i></a>
+                                </div>
+                            </td>   
+                        </tr>
+                        <!--                     
                             <td>La divina commedia</td>                         
                             <td>Il trono di spade</td>
-                            <td>Il moondo di Sofia</td>
+                            <td>Il mondo di Sofia</td>
                             <td>Le cronache di Narnia: il leone, la strega e larmadio</td>                       
                             <td>il piccolo principe</td>                
                             <td>La storia infinita</td> -->
                     </tbody>
                 </table>
             </section>
-            <section class="col-12 col-4-lg bg-light">
+            <section class="col-12 col-lg-4">
                 <section class="row">
-                    <section class="col-12 bg-info"></section>
-                    <section class="col-12 bg-warning"></section>
+                    <section class="col-12 pb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                Todo
+                            </div>
+                            <ul class="list-group list-group-flush p-2">
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                        Chiamare segreteria
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                        Mandare avvisi prestiti scaduti
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                        Ordinare nuovi libri
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="col-12 pb-3">
+                        <div class="card">
+                            <div class="card-header">
+                                F.A.Q.
+                            </div>
+                            <div class="accordion p-3" id="accordionPanelsStayOpenExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                        Come aggiugnere un nuovo libro?
+                                    </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque autem exercitationem iusto, sed beatae, laboriosam impedit perferendis ex fugiat assumenda nulla saepe maiores ea officiis facilis eligendi tempore vel nobis?
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis ut cupiditate cumque eligendi autem pariatur ipsum, esse quisquam nulla et iusto iste itaque natus. Rerum placeat velit quae ab?
+                                        Repellendus minima deserunt aliquam architecto! Natus cumque pariatur laborum impedit quod, earum modi architecto deleniti voluptatibus sit excepturi distinctio sint dolorum. Repellendus officiis nisi reiciendis animi nobis in sunt amet.
+                                        Repudiandae delectus accusantium praesentium corporis tempore deleniti voluptas maiores laboriosam sed, omnis voluptatibus in quos quibusdam? Quos deleniti, nesciunt quidem, perspiciatis veritatis, unde non reiciendis adipisci consequuntur ipsa laboriosam ullam!
+                                        Corrupti voluptas eaque velit non distinctio cum veritatis rem itaque, dignissimos deleniti eveniet quisquam aliquid dolorem porro quibusdam! Sunt qui error sapiente incidunt pariatur sint deleniti vero quaerat quibusdam explicabo.
+                                        Commodi nemo corporis, vitae quas natus ducimus esse ex velit ipsam cum sapiente voluptates. Accusamus deleniti reiciendis eos vero! Ratione error tempora nostrum. Molestias totam aspernatur pariatur tempore sunt. Qui.
+                                        </p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                        Posso usaare questa dashboard da mobile?
+                                    </button>
+                                    </h2>
+                                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis reiciendis harum beatae laboriosam eaque. Tenetur perferendis molestiae quae velit veniam. Ea aspernatur cumque ratione, minima laborum blanditiis modi ab dicta!
+                                        Consequuntur fugit libero dolore architecto placeat tenetur laboriosam nam quo minus ab perferendis optio accusantium adipisci quasi, obcaecati aspernatur maxime eos corporis? Eos, sed tempore tempora sint ea laboriosam enim.
+                                        Aspernatur ex placeat praesentium unde voluptatem iure repellendus asperiores, cumque quidem aliquam quae facilis atque dolorem corporis dolores reiciendis quaerat aperiam ullam consequuntur minus ipsum architecto consequatur molestias. Praesentium, facilis.</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </section>
                 </section>
             </section>
         </section>
